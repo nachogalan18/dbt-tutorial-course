@@ -32,3 +32,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_personal_project:   # This key corresponds to the name of your project
     +materialized: table  # All models in example/ will be built as tables
+    +persist_docs:
+      relation: true
+      columns: true
