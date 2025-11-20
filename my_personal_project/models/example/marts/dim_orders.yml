@@ -30,6 +30,11 @@ models:
       - name: order_shipped_at
         description: "When the order was shipped"
 
+      - name: order_status
+        description: "{{ doc('status') }}"
+        tests:
+          - not_null
+
       - name: num_of_item
         description: "Number of items in the order"
 
